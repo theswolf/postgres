@@ -1,5 +1,6 @@
 # vim:set ft=dockerfile:
-FROM debian:jessie
+#FROM debian:jessie
+FROM buildpack-deps:jessie-scm
 
 RUN set -ex; \
 	if ! command -v gpg > /dev/null; then \
